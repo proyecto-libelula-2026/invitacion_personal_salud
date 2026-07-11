@@ -74,7 +74,7 @@ class _LandingPageState extends State<LandingPage>
     final msg = Uri.encodeComponent(
       '¡Hola! confirmo mi asistencia a la '
       'Clausura del Programa de Educación Emocional — Proyecto Libélula\n'
-      'Fecha: Lunes 22 de junio 2026 · 1:30 pm',
+      'Fecha: Miércoles 29 de Julio 2026 · 7:00 am - 9:00 am',
     );
     final uri = Uri.parse('https://wa.me/573118888534?text=$msg');
     if (await canLaunchUrl(uri)) await launchUrl(uri);
@@ -368,7 +368,7 @@ class _InvitationCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 Text(
-                  'Con emocion los invitamos al cierre del Sistema de Gestión de Aprendizaje Emocional realizado con los pacientes y cuidadores.',
+                  'Con emocion los invitamos al cierre del Sistema de Gestión de Aprendizaje Emocional realizado con el personal en salud.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: kBlue,
@@ -387,13 +387,13 @@ class _InvitationCard extends StatelessWidget {
           const _EventDetail(
             icon: '📅',
             label: 'Fecha',
-            value: 'Lunes 22 de junio 2026',
+            value: 'Miercoles 29 de Julio 2026',
           ),
           const SizedBox(height: 10),
           const _EventDetail(
             icon: '🕐',
             label: 'Hora',
-            value: '1:30 pm – 4:00 pm',
+            value: '7:00 am - 9:00 pm',
           ),
           const SizedBox(height: 10),
           const _EventDetail(
@@ -420,7 +420,7 @@ class _InvitationCard extends StatelessWidget {
                 SizedBox(width: 10),
                 Expanded(
                   child: Text(
-                    'Por favor confirme asistencia antes del 5 de junio 2026',
+                    'Por favor confirme asistencia antes del 24 de Julio 2026',
                     style: TextStyle(
                       color: Color(0xFF7B4F00),
                       fontSize: 13,
